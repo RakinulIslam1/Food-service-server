@@ -48,7 +48,7 @@ async function run(){
 
         app.post('/orders', async (req, res) =>{
             const order = req.body;
-            
+            const result = orderCollection.insertOne(order);
         })
 
         
