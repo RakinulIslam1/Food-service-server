@@ -46,6 +46,11 @@ async function run(){
             res.send(service);
         });
 
+        app.post('/orders', async (req, res) =>{
+            const order = req.body;
+            
+        })
+
         
     }
     finally{
