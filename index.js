@@ -24,6 +24,7 @@ async function run(){
 
     try{
         const serviceCollection = client.db('serviceFood').collection('allService');
+        const orderCollection = client.db('serviceFood').collection('order');
 
         app.get('/service', async (req, res) =>{
             const query = {};
@@ -54,12 +55,6 @@ async function run(){
 }
 run().catch(err => console.error(err));
  
-
-
-
-
-
-
 
 app.get('/', (req, res) =>{
     res.send('server is running');
